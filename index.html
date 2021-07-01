@@ -46,100 +46,177 @@
     </div>
  &nbsp;
 
-<h3>Emotional speakers</h3>
 <table>
   <tbody>
     <tr>
       <td>Speaker</td>
       <td align="center">Reference</td>
       <td>Method</td>
-      <td align="center">Angry</td>
-      <td align="center">Happy</td>
-      <td align="center">Neutral</td>
-      <td align="center">Sad</td>
+      <td align="center">Song1</td>
+      <td align="center">Song2</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td align="center">碰上我们算他们倒霉</td>
-      <td align="center">宝宝太有意思了</td>
-      <td align="center">设备保持更新</td>
-      <td align="center">第一场比赛以失败而告终</td>
+      <td align="center">You are my sunshine</td>
+      <td align="center">Over the rainbow</td>
     </tr>
     <tr>
-      <th rowspan="5">EF1</th>
-      <th rowspan="5"><audio controls=""><source src="samples/GT/fneu_0005.wav"></audio></th>
-      <th>GT</th>
-      <td><audio controls=""><source src="samples/GT/fang_0002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GT/fhap_0003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GT/fneu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GT/fsad_0004.wav"></audio></td>
+      <th rowspan="10">singer-1</th>
+      <th rowspan="10"><audio controls=""><source src="samples/GT-singer.wav"></audio></th>
+      <th>F0-DAR</th>
+      <td><audio controls=""><source src="samples/DAR-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>BASE-EMB</th>
-      <td><audio controls=""><source src="samples/EMB/zz-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/EMB/zz-hap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/EMB/zz-neu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/EMB/zz-sad_004.wav"></audio></td>
+      <th>F0-DAR-FFT</th>
+      <td><audio controls=""><source src="samples/DAR-FFT-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-FFT-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>BASE-GST</th>
-      <td><audio controls=""><source src="samples/GST/zz-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GST/zz-hap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GST/zz-neu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GST/zz-sad_004.wav"></audio></td>
+      <th>F0-CNN</th>
+      <td><audio controls=""><source src="samples/CNN-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>OURS-TRANS</th>
-      <td><audio controls=""><source src="samples/TRANS/zz-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/TRANS/zz-hap_003.wav"></audio></td>
-      <td>&nbsp;</td>
-      <td><audio controls=""><source src="samples/TRANS/zz-sad_004.wav"></audio></td>
+      <th>F0-CNN-FFT</th>
+      <td><audio controls=""><source src="samples/CNN-FFT-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FFT-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>OURS-SYN</th>
-      <td><audio controls=""><source src="samples/SYN/zz-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/SYN/zz-hap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/SYN/zz-neu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/SYN/zz-sad_004.wav"></audio></td>
+      <th>F0-CNN-FFT-RES</th>
+      <td><audio controls=""><source src="samples/CNN-FFT-RES-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FFT-RES-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th rowspan="5">EM1</th>
-      <th rowspan="5"><audio controls=""><source src="samples/GT/mneu_005.wav"></audio></th>
-      <th>GT</th>
-      <td><audio controls=""><source src="samples/GT/mang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GT/mhap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GT/mneu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GT/msad_004.wav"></audio></td>
+      <th>F0-RNN</th>
+      <td><audio controls=""><source src="samples/RNN-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>BASE-EMB</th>
-      <td><audio controls=""><source src="samples/EMB/wc-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/EMB/wc-hap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/EMB/wc-neu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/EMB/wc-sad_004.wav"></audio></td>
+      <th>F0-RNN-FFT</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>BASE-GST</th>
-      <td><audio controls=""><source src="samples/GST/wc-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GST/wc-hap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GST/wc-neu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/GST/wc-sad_004.wav"></audio></td>
+      <th>F0-RNN-FFT-RES</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>OURS-TRANS</th>
-      <td><audio controls=""><source src="samples/TRANS/wc-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/TRANS/wc-hap_003.wav"></audio></td>
-      <td>&nbsp;</td>
-      <td><audio controls=""><source src="samples/TRANS/wc-sad_004.wav"></audio></td>
+      <th>F0-RNN-FFT-RES-noVibExt</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-noVibExt-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-noVibExt-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>OURS-SYN</th>
-      <td><audio controls=""><source src="samples/SYN/wc-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/SYN/wc-hap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/SYN/wc-neu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/SYN/wc-sad_004.wav"></audio></td>
+      <th>BASE-Note</th>
+      <td><audio controls=""><source src="samples/NOTE-you are my sunsine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/NOTE-over the rainbow-singer.wav"></audio></td>
+    </tr>
+    <tr>
+      <th rowspan="10">speaker-1</th>
+      <th rowspan="10"><audio controls=""><source src="samples/GT-spk1.wav"></audio></th>
+      <th>F0-DAR</th>
+      <td><audio controls=""><source src="samples/DAR-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-DAR-FFT</th>
+      <td><audio controls=""><source src="samples/DAR-FFT-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-FFT-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-CNN</th>
+      <td><audio controls=""><source src="samples/CNN-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-CNN-FFT</th>
+      <td><audio controls=""><source src="samples/CNN-FFT-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FFT-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-CNN-FFT-RES</th>
+      <td><audio controls=""><source src="samples/CNN-FFT-RES-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FFT-RES-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN</th>
+      <td><audio controls=""><source src="samples/RNN-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN-FFT</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN-FFT-RES</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN-FFT-RES-noVibExt</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-noVibExt-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-noVibExt-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>BASE-Note</th>
+      <td><audio controls=""><source src="samples/NOTE-you are my sunsine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/NOTE-over the rainbow-spk1.wav"></audio></td>
+    </tr>
+    <tr>
+      <th rowspan="10">speaker-LJSpeech</th>
+      <th rowspan="10"><audio controls=""><source src="samples/GT-LJ.wav"></audio></th>
+      <th>F0-DAR</th>
+      <td><audio controls=""><source src="samples/DAR-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-DAR-FFT</th>
+      <td><audio controls=""><source src="samples/DAR-FFT-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-FFT-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-CNN</th>
+      <td><audio controls=""><source src="samples/CNN-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-CNN-FFT</th>
+      <td><audio controls=""><source src="samples/CNN-FFT-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FFT-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-CNN-FFT-RES</th>
+      <td><audio controls=""><source src="samples/CNN-FFT-RES-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FFT-RES-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN</th>
+      <td><audio controls=""><source src="samples/RNN-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN-FFT</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN-FFT-RES</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>F0-RNN-FFT-RES-noVibExt</th>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-noVibExt-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FFT-RES-noVibExt-over the rainbow-spk2(LJ).wav"></audio></td>
+    </tr>
+    <tr>
+      <th>BASE-Note</th>
+      <td><audio controls=""><source src="samples/NOTE-you are my sunsine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/NOTE-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
   </tbody>
 </table>
