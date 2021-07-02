@@ -29,8 +29,7 @@
 
     <div><b>Abstract:</b>
 
-        </br> We present an end-to-end system for multi-speaker emotional speech synthesis. 
-    In particular, our system learns emotion classes from just two speakers then generalizes these classes to other speakers from whom no emotional data was seen. We address the problem by integrating disentangled, fine-grained prosody features with global, sentence-level emotion embedding. These fine-grained features learn to represent local prosodic variations disentangled from speaker, tone and global emotion label. Compared to systems that model emotions at sentence level only, our method achieves higher ratings in naturalness and expressiveness, while retaining comparable speaker similarity ratings. </br></br>
+        </br> Decent vibratos are a trait of good vocal training, often associated with perceived level of singing skill. In this paper we present a system for multi-singer singing voice synthesis, which is capable of producing high quality singing with convincing, controllable vibratos, and can also synthesize natural singing voices for target speakers with only speech data. This is enabled by using a unified speech-and-singing acoustic model that not only bridges the modality gap but also helps make best use of both types of data. The acoustic model exposes the full F0 contour therefore allows explicitly modelling of F0 characteristics specific to singing voice. We observe that short-term Fourier transform of the F0 contour sparsely encode vibrato characteristics, and derive a learning objective therefrom for improved vibrato production. Control of the synthesized vibrato extent is possible by wiring in a supervised “extent” neuron and expose it to outer system. Experimental results confirm the effectiveness of proposed objective in producing good vibratos and improving overall perceived singing voice quality </br></br>
 
     </div>
 
@@ -70,9 +69,9 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/DAR-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-DAR-FFT</th>
-      <td><audio controls=""><source src="samples/DAR-FFT-you are my sunshine-singer.wav"></audio></td>
-      <td><audio controls=""><source src="samples/DAR-FFT-over the rainbow-singer.wav"></audio></td>
+      <th>F0-DAR-FT</th>
+      <td><audio controls=""><source src="samples/DAR-FT-you are my sunshine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-FT-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
       <th>F0-CNN</th>
@@ -80,14 +79,14 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/CNN-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-CNN-FFT</th>
-      <td><audio controls=""><source src="samples/CNN-FFT-you are my sunshine-singer.wav"></audio></td>
-      <td><audio controls=""><source src="samples/CNN-FFT-over the rainbow-singer.wav"></audio></td>
+      <th>F0-CNN-FT</th>
+      <td><audio controls=""><source src="samples/CNN-FT-you are my sunshine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FT-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-CNN-FFT-RES</th>
-      <td><audio controls=""><source src="samples/CNN-FFT-RES-you are my sunshine-singer.wav"></audio></td>
-      <td><audio controls=""><source src="samples/CNN-FFT-RES-over the rainbow-singer.wav"></audio></td>
+      <th>F0-CNN-FT-RES</th>
+      <td><audio controls=""><source src="samples/CNN-FT-RES-you are my sunshine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FT-RES-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
       <th>F0-RNN</th>
@@ -95,19 +94,19 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/RNN-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT</th>
-      <td><audio controls=""><source src="samples/RNN-FFT-you are my sunshine-singer.wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFT-over the rainbow-singer.wav"></audio></td>
+      <th>F0-RNN-FT</th>
+      <td><audio controls=""><source src="samples/RNN-FT-you are my sunshine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FT-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT-RES <font color="#FF0000">(Best)</font></th>
-      <td><audio controls=""><source src="samples/RNN-FFT-RES-you are my sunshine-singer.wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFT-RES-over the rainbow-singer.wav"></audio></td>
+      <th>F0-RNN-FT-RES <font color="#FF0000">(Best)</font></th>
+      <td><audio controls=""><source src="samples/RNN-FT-RES-you are my sunshine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FT-RES-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT-RES-noVibExt</th>
-      <td><audio controls=""><source src="samples/RNN-FFTonly-RES-you are my sunshine-singer.wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFTonly-RES-over the rainbow-singer.wav"></audio></td>
+      <th>F0-RNN-FT-RES-noVibExt</th>
+      <td><audio controls=""><source src="samples/RNN-FTonly-RES-you are my sunshine-singer.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FTonly-RES-over the rainbow-singer.wav"></audio></td>
     </tr>
     <tr>
       <th>BASE-Note</th>
@@ -127,9 +126,9 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/DAR-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-DAR-FFT</th>
-      <td><audio controls=""><source src="samples/DAR-FFT-you are my sunshine-spk1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/DAR-FFT-over the rainbow-spk1.wav"></audio></td>
+      <th>F0-DAR-FT</th>
+      <td><audio controls=""><source src="samples/DAR-FT-you are my sunshine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-FT-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
       <th>F0-CNN</th>
@@ -137,14 +136,14 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/CNN-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-CNN-FFT</th>
-      <td><audio controls=""><source src="samples/CNN-FFT-you are my sunshine-spk1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/CNN-FFT-over the rainbow-spk1.wav"></audio></td>
+      <th>F0-CNN-FT</th>
+      <td><audio controls=""><source src="samples/CNN-FT-you are my sunshine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FT-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-CNN-FFT-RES</th>
-      <td><audio controls=""><source src="samples/CNN-FFT-RES-you are my sunshine-spk1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/CNN-FFT-RES-over the rainbow-spk1.wav"></audio></td>
+      <th>F0-CNN-FT-RES</th>
+      <td><audio controls=""><source src="samples/CNN-FT-RES-you are my sunshine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FT-RES-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
       <th>F0-RNN</th>
@@ -152,19 +151,19 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/RNN-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT</th>
-      <td><audio controls=""><source src="samples/RNN-FFT-you are my sunshine-spk1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFT-over the rainbow-spk1.wav"></audio></td>
+      <th>F0-RNN-FT</th>
+      <td><audio controls=""><source src="samples/RNN-FT-you are my sunshine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FT-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT-RES <font color="#FF0000">(Best)</font></th>
-      <td><audio controls=""><source src="samples/RNN-FFT-RES-you are my sunshine-spk1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFT-RES-over the rainbow-spk1.wav"></audio></td>
+      <th>F0-RNN-FT-RES <font color="#FF0000">(Best)</font></th>
+      <td><audio controls=""><source src="samples/RNN-FT-RES-you are my sunshine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FT-RES-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT-RES-noVibExt</th>
-      <td><audio controls=""><source src="samples/RNN-FFTonly-RES-you are my sunshine-spk1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFTonly-RES-over the rainbow-spk1.wav"></audio></td>
+      <th>F0-RNN-FT-RES-noVibExt</th>
+      <td><audio controls=""><source src="samples/RNN-FTonly-RES-you are my sunshine-spk1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FTonly-RES-over the rainbow-spk1.wav"></audio></td>
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -179,9 +178,9 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/DAR-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-DAR-FFT</th>
-      <td><audio controls=""><source src="samples/DAR-FFT-you are my sunshine-spk2(LJ).wav"></audio></td>
-      <td><audio controls=""><source src="samples/DAR-FFT-over the rainbow-spk2(LJ).wav"></audio></td>
+      <th>F0-DAR-FT</th>
+      <td><audio controls=""><source src="samples/DAR-FT-you are my sunshine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/DAR-FT-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
       <th>F0-CNN</th>
@@ -189,14 +188,14 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/CNN-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-CNN-FFT</th>
-      <td><audio controls=""><source src="samples/CNN-FFT-you are my sunshine-spk2(LJ).wav"></audio></td>
-      <td><audio controls=""><source src="samples/CNN-FFT-over the rainbow-spk2(LJ).wav"></audio></td>
+      <th>F0-CNN-FT</th>
+      <td><audio controls=""><source src="samples/CNN-FT-you are my sunshine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FT-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-CNN-FFT-RES</th>
-      <td><audio controls=""><source src="samples/CNN-FFT-RES-you are my sunshine-spk2(LJ).wav"></audio></td>
-      <td><audio controls=""><source src="samples/CNN-FFT-RES-over the rainbow-spk2(LJ).wav"></audio></td>
+      <th>F0-CNN-FT-RES</th>
+      <td><audio controls=""><source src="samples/CNN-FT-RES-you are my sunshine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/CNN-FT-RES-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
       <th>F0-RNN</th>
@@ -204,19 +203,19 @@ Song2: Somewhere over the rainbow way up high. There's a land that I heard of on
       <td><audio controls=""><source src="samples/RNN-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT</th>
-      <td><audio controls=""><source src="samples/RNN-FFT-you are my sunshine-spk2(LJ).wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFT-over the rainbow-spk2(LJ).wav"></audio></td>
+      <th>F0-RNN-FT</th>
+      <td><audio controls=""><source src="samples/RNN-FT-you are my sunshine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FT-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT-RES <font color="#FF0000">(Best)</font></th>
-      <td><audio controls=""><source src="samples/RNN-FFT-RES-you are my sunshine-spk2(LJ).wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFT-RES-over the rainbow-spk2(LJ).wav"></audio></td>
+      <th>F0-RNN-FT-RES <font color="#FF0000">(Best)</font></th>
+      <td><audio controls=""><source src="samples/RNN-FT-RES-you are my sunshine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FT-RES-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
     <tr>
-      <th>F0-RNN-FFT-RES-noVibExt</th>
-      <td><audio controls=""><source src="samples/RNN-FFTonly-RES-you are my sunshine-spk2(LJ).wav"></audio></td>
-      <td><audio controls=""><source src="samples/RNN-FFTonly-RES-over the rainbow-spk2(LJ).wav"></audio></td>
+      <th>F0-RNN-FT-RES-noVibExt</th>
+      <td><audio controls=""><source src="samples/RNN-FTonly-RES-you are my sunshine-spk2(LJ).wav"></audio></td>
+      <td><audio controls=""><source src="samples/RNN-FTonly-RES-over the rainbow-spk2(LJ).wav"></audio></td>
     </tr>
   </tbody>
 </table>
